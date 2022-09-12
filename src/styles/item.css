@@ -1,0 +1,30 @@
+.movie__container{
+    width: 90%;
+    margin: 10px auto;
+}
+
+.movies--img{
+    width: 90%;
+}
+.movies--img img{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.movies--title{
+    font-size: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.movies--title h2{
+    color: #000;
+}
+
+.movies--title p{
+    line-height: 0;
+    margin-top: 10px;
+
+    color: #7b7474;
+}

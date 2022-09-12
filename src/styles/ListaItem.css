@@ -1,0 +1,111 @@
+:root{
+    --tmdbLightGreen: 30,213,169;
+    --tmdbLightBlue: 1,180,228;
+}
+
+.card__container{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 0 auto;
+}
+@media (min-width: 540px){
+    .card__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+@media (min-width: 768px){
+    .card__container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+@media (min-width: 978px){
+    .card__container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}
+
+.card--item{
+    margin: 20px 10px;
+}
+
+.header--search{
+    background-image: url('https://www.themoviedb.org/t/p/w1920_and_h600_multi_faces_filter(duotone,032541,01b4e4)/34OGjFEbHj0E3lE2w0iTUVq0CBz.jpg');
+    min-height: 300px;
+    height: calc(100vh / 2.5);
+    max-height: 360px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.header--search form{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+.header--search button{
+    padding: 12px 25px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 65px;
+    background: linear-gradient(to right, rgba(var(--tmdbLightGreen), 1) 0%, rgba(var(--tmdbLightBlue), 1) 100%);
+    font-weight: bold;
+    color: #fff;
+}
+@media (min-width: 540px){
+    .header--search button{
+        right: 70px;
+    }
+    
+}
+
+@media (min-width: 868px){
+    .header--search button{
+        right: 90px;
+    }
+    
+}
+
+
+.input--search{
+    width: 75%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+@media (min-width: 560px){
+    .input--search {
+        width: 90%;
+    }
+    
+}
+@media (min-width: 1000px){
+    .header--search button{
+        right: 110px;
+    }
+    .input--search{
+        width: 100%;
+    }
+    
+}
+
+.info{
+    height: 200px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+.info h1{
+    font-size: 48px;
+    margin-bottom: 10px;
+}
